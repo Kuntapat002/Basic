@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JJmercury</title>
 </head>
+
 <body>
     <?php
     include("header.php");
@@ -18,10 +19,10 @@
     Subscribe
   </div>
   <div class="card-body">
-   <form name="form1" action="#" method="post">
+   <form name="form1" action="insert.php" method="post">
         <div class="row">
             <div class="col-md-2"><label for="exampleFormControlInput1" class="form-label">Name Title</label>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="txt_Title" id="txt_Title">
             <option selected>Selected</option>
             <option value="Mr.">Mr.</option>
             <option value="Mrs.">Mrs.</option>
@@ -30,22 +31,22 @@
         </div>
 
         <div class="col-md-5"><label for="exampleFormControlInput1" class="form-label">Name</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*Name">
+        <input type="input" class="form-control" name="txt_Name" id="txt_Name" placeholder="*Name">
         </div>
 
         <div class="col-md-5"><label for="exampleFormControlInput1" class="form-label">Last name</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*Last name">
+        <input type="input" class="form-control" name="txt_Lname" id="txt_Lname" placeholder="*Last name">
         </div>
     </div>
 
     <div class="row">
     <div class="col-md-2"><label for="exampleFormControlInput1" class="form-label">Sex</label>
             <div class="form-check">
-            <input type="radio" class="form-check-input" name="sex" id="sex">Male
+            <input type="radio" class="form-check-input" name="txt_sex" id="txt_sex" value="Male">Male
             </div>
 
             <div class="form-check">
-             <input type="radio" class="form-check-input" name="sex" id="sex">Female
+             <input type="radio" class="form-check-input" name="txt_sex" id="txt_sex" value="Female">Female
             </div>
 
         </div>
@@ -65,18 +66,18 @@
 <div class="row">
 
 <div class="col-md-6"><label for="exampleFormControlInput1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*E-mail">
+            <input type="email" class="form-control" name="txt_Email" id="txt_Email" placeholder="*E-mail">
         </div>
 
 <div class="col-md-6"><label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-            <input type="Number" class="form-control" id="exampleFormControlInput1" placeholder="*Phone Number">
+            <input type="input" class="form-control" name="txt_Number" id="txt_Number" placeholder="*Phone Number">
         </div>
 
 </div>
 <br>
 <center>
-<button type="button" class="btn btn-outline-warning"><i class="bi bi-x-circle"></i>Cancel</button>
-<button type="button" class="btn btn-outline-warning"><i class="bi bi-arrow-90deg-right"></i>Save</button>
+<button type="reset" class="btn btn-outline-warning"><i class="bi bi-x-circle"></i>Cancel</button>
+<button type="submit" class="btn btn-outline-warning"><i class="bi bi-arrow-90deg-right"></i>Save</button>
 </center>
     </form>
   </div>
